@@ -1,5 +1,3 @@
---- 
-
 | Emotion |                         [Photon X EpicRealism](https://civitai.com/models/652785/photon-x-epicrealism)                          |                          [Anime Anything](https://civitai.com/models/113841/animeanything-or)                          |                   [Cute Cartoon Illustration](https://civitai.com/models/85547/cute-cartoon-illustration)                    |                         [Western Cartoon Type A](https://civitai.com/models/62060/western-cartoon-type-a)                         |
 |----------|:-------------------------------------------------------------------------:|:--------------------------------------------------------------------:|:------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
 | laughing<br>Positive: `1`<br>Keywords: `((laughing joyfully)), (open mouth), (expressive eyes), (wide smile)` |      ![laughing](./img/emotions/photonXEpicrealism_v10/laughing.png)      |      ![laughing](./img/emotions/animeanything_v10/laughing.png)      |      ![laughing](./img/emotions/cuteCartoon_v10/laughing.png)      |      ![laughing](./img/emotions/westernCartoonTypeA_v10/laughing.png)      |
@@ -101,5 +99,3 @@
 | rejected<br>Positive: ``<br>Keywords: `((rejected expression))` |      ![rejected](./img/emotions/photonXEpicrealism_v10/rejected.png)      |      ![rejected](./img/emotions/animeanything_v10/rejected.png)      |      ![rejected](./img/emotions/cuteCartoon_v10/rejected.png)      |      ![rejected](./img/emotions/westernCartoonTypeA_v10/rejected.png)      |
 | horrified<br>Positive: ``<br>Keywords: `((horrified expression))` |     ![horrified](./img/emotions/photonXEpicrealism_v10/horrified.png)     |     ![horrified](./img/emotions/animeanything_v10/horrified.png)     |     ![horrified](./img/emotions/cuteCartoon_v10/horrified.png)     |     ![horrified](./img/emotions/westernCartoonTypeA_v10/horrified.png)     |
 | defeated<br>Positive: ``<br>Keywords: `((defeated expression))` |      ![defeated](./img/emotions/photonXEpicrealism_v10/defeated.png)      |      ![defeated](./img/emotions/animeanything_v10/defeated.png)      |      ![defeated](./img/emotions/cuteCartoon_v10/defeated.png)      |      ![defeated](./img/emotions/westernCartoonTypeA_v10/defeated.png)      |
-
---- 
