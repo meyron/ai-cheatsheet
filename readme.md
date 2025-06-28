@@ -27,6 +27,3 @@ You're welcome to suggest new prompt sets, model comparisons, or contribute your
 
 - [Civitai](https://civitai.com) – Explore models used for generation.
 
----
-
-Made with ❤️ by [YourName or GitHub handle]
