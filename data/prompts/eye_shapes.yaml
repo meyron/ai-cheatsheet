@@ -1,0 +1,86 @@
+name: eye_shapes
+label: Eye shapes
+description: "Prompt Cheatsheet: Eye shapes Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, shallow depth of field, high quality, 8k resolution, close-up, portrait, 25yo, woman,
+    attractive, beautiful, long curly red hair, round face shape, head facing forward,
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: almond
+    positive: ((almond-shaped eyes)), slightly upturned outer corners
+    negative: round, small
+    file_prefix: almond_
+    description: Classic almond eyes with balanced width and height.
+    is_positive: true
+
+  - name: round
+    positive: ((round eyes)), large, open
+    negative: narrow, squinting
+    file_prefix: round_
+    description: Large and circular eyes with high visibility.
+    is_positive: true
+
+  - name: monolid
+    positive: ((monolid eyes)), smooth eyelid without crease
+    negative: double eyelid, heavy crease
+    file_prefix: monolid_
+    description: Eyes with a flat, smooth eyelid and no visible crease.
+    is_positive: true
+
+  - name: hooded
+    positive: ((hooded eyes)), soft eyelid crease, heavy lid
+    negative: wide open, bulging
+    file_prefix: hooded_
+    description: A low brow bone with skin that folds down.
+    is_positive: true
+
+  - name: upturned
+    positive: ((upturned eyes)), higher outer corners
+    negative: downturned, tired
+    file_prefix: upturned_
+    description: Eyes that lift upward toward the outer edge.
+    is_positive: true
+
+  - name: downturned
+    positive: ((downturned eyes)), outer corners dip downward
+    negative: upturned, cheerful
+    file_prefix: downturned_
+    description: Eyes that slope slightly downward at the outer corners.
+    is_positive: true
+
+  - name: wide_set
+    positive: ((wide-set eyes)), more space between eyes
+    negative: close-set, narrow
+    file_prefix: wide_set_
+    description: Eyes spaced farther apart than average.
+    is_positive: true
+
+  - name: close_set
+    positive: ((close-set eyes)), short distance between inner corners
+    negative: wide-set
+    file_prefix: close_set_
+    description: Eyes positioned closer together on the face.
+    is_positive: true
+
+  - name: small
+    positive: ((small eyes)), narrow, subtle
+    negative: large, exaggerated
+    file_prefix: small_
+    description: Compact and narrow eyes.
+    is_positive: true
+
+  - name: large
+    positive: ((large eyes)), expressive, wide
+    negative: small, squinting
+    file_prefix: large_
+    description: Big and expressive eyes with wide opening.
+    is_positive: true

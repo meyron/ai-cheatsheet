@@ -1,0 +1,100 @@
+name: mouth_shapes
+label: Mouth shapes
+description: "Prompt Cheatsheet: Mouth shapes Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, shallow depth of field, high quality, 8k resolution, close-up, portrait, 25yo, woman,
+    attractive, beautiful, long curly red hair, round face shape, head facing forward, looking at the viewer,
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: full_lips
+    positive: ((full lips)), plump, defined shape
+    negative: thin, flat
+    file_prefix: full_lips_
+    description: Plump and well-defined lips with volume.
+    is_positive: true
+
+  - name: thin_lips
+    positive: ((thin lips)), delicate, subtle
+    negative: full, pouty
+    file_prefix: thin_lips_
+    description: Narrow lips with refined contours.
+    is_positive: true
+
+  - name: heart_shaped_lips
+    positive: ((heart-shaped lips)), cupid’s bow accentuated
+    negative: flat, undefined
+    file_prefix: heart_shaped_lips_
+    description: Lips with a pronounced cupid’s bow and fullness.
+    is_positive: true
+
+  - name: wide_smile
+    positive: ((wide smile)), broad, joyful
+    negative: small, closed
+    file_prefix: wide_smile_
+    description: A broad mouth expression showing happiness.
+    is_positive: true
+
+  - name: small_mouth
+    positive: ((small mouth)), neat proportions
+    negative: wide, exaggerated
+    file_prefix: small_mouth_
+    description: A compact and dainty mouth shape.
+    is_positive: true
+
+  - name: downturned_mouth
+    positive: ((downturned mouth corners)), subtle sadness
+    negative: upturned, happy
+    file_prefix: downturned_
+    description: Mouth corners that dip slightly downward.
+    is_positive: true
+
+  - name: upturned_mouth
+    positive: ((upturned mouth corners)), gentle smile
+    negative: downturned, neutral
+    file_prefix: upturned_
+    description: Corners of the mouth that lift subtly.
+    is_positive: true
+
+  - name: prominent_cupid_bow
+    positive: ((pronounced cupid’s bow)), defined shape
+    negative: flat, straight
+    file_prefix: cupid_bow_
+    description: A deeply defined upper-lip curve.
+    is_positive: true
+
+  - name: full_lower_lip
+    positive: ((full lower lip)), plump bottom lip
+    negative: even, thin
+    file_prefix: full_lower_lip_
+    description: A noticeably plumped lower lip.
+    is_positive: true
+
+  - name: bow_shaped_lips
+    positive: ((bow-shaped lips)), curved upper lip
+    negative: flat, rounded
+    file_prefix: bow_shaped_
+    description: Lips that resemble a bow with upward curves.
+    is_positive: true
+
+  - name: wide_pout
+    positive: ((wide pout)), fuller lips across mouth
+    negative: narrow, small
+    file_prefix: wide_pout_
+    description: A pouty look with width and fullness.
+    is_positive: true
+
+  - name: neutral_lips
+    positive: ((neutral lips)), relaxed, natural
+    negative: smiling, pursed
+    file_prefix: neutral_lips_
+    description: Lips in a neutral, calm state.
+    is_positive: true

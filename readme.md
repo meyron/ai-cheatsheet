@@ -4,11 +4,17 @@ This repository provides visual prompt reference guides for generating consisten
 
 ## 📘 Cheatsheets
 
-| Category        | Description                                                                                 |
-|----------------|---------------------------------------------------------------------------------------------|
-| [Face Shapes](./face_shapes.md) | Prompt cheatsheet showing different facial shapes rendered across multiple AI models. Useful for testing consistency and anatomy. |
-| [Emotions](./emotions.md)       | Prompt cheatsheet illustrating a range of emotional expressions (e.g., laughing, smiling, serious) in AI-generated faces. |
-| [Postures](./posture.md)        | Prompt cheatsheet comparing full-body postures (e.g., standing, sitting, leaning) across different model styles.            |
+| Category                          | Description                                                                                                                    |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| [Face Shapes](./.docs/prompts/face_shapes.md)     | Prompt cheatsheet showing different facial shapes rendered across multiple AI models. Useful for testing consistency and anatomy. |
+| [Emotions](./.docs/prompts/emotions.md)           | Prompt cheatsheet illustrating a range of emotional expressions (e.g., laughing, smiling, serious) in AI-generated faces.       |
+| [Postures](./.docs/prompts/posture.md)            | Prompt cheatsheet comparing full-body postures (e.g., standing, sitting, leaning) across different model styles.                |
+| [Body Types](./.docs/prompts/body_types.md)       | Prompt cheatsheet displaying various body types as interpreted by different AI models.                                           |
+| [Eye Shapes](./.docs/prompts/eye_shapes.md)       | Prompt cheatsheet showcasing different eye shapes and how consistently they are rendered across models.                         |
+| [Eyebrows](./.docs/prompts/eyebrows.md)           | Prompt cheatsheet exploring eyebrow shapes and expressions across styles and models.                                            |
+| [Hairstyles](./.docs/prompts/hairstyle.md)        | Prompt cheatsheet illustrating diverse hairstyles across AI model outputs.                                                      |
+| [Mouth Shapes](./.docs/prompts/mouth_shapes.md)   | Prompt cheatsheet comparing different mouth shapes and lip styles across models.                                                |
+| [Nose Shapes](./.docs/prompts/nose_shapes.md)     | Prompt cheatsheet showcasing various nose shapes and profile styles.                                                            |
 
 ## 💡 Purpose
 

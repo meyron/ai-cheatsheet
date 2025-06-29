@@ -1,0 +1,213 @@
+name: body_types
+label: Body types
+description: "Prompt Cheatsheet: Body types Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, full body, 8k resolution, 25yo woman, solo, attractive, gray eyes, long curly red hair, 
+    natural face, grey closed sport bra, grey shorts, open waist, neutral expression, balanced proportions, 
+    clean background,
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: slim
+    positive: ((slim body type)), lean, delicate frame
+    negative: overweight, bulky
+    file_prefix: slim_
+    description: A slender and graceful body type with low body fat.
+    is_positive: true
+
+  - name: athletic
+    positive: ((athletic body type)), toned muscles, fit physique
+    negative: soft, unfit
+    file_prefix: athletic_
+    description: A strong and fit body with visible muscle tone.
+    is_positive: true
+
+  - name: muscular
+    positive: ((muscular body type)), defined muscles, powerful build
+    negative: slim, weak
+    file_prefix: muscular_
+    description: A heavily muscled and strong physique.
+    is_positive: true
+
+  - name: curvy
+    positive: ((curvy body type)), full hips and bust, defined waist
+    negative: flat, angular
+    file_prefix: curvy_
+    description: A voluptuous figure with noticeable curves.
+    is_positive: true
+
+  - name: pear_shaped
+    positive: ((pear-shaped body)), wider hips, narrower shoulders
+    negative: broad shoulders, rectangular shape
+    file_prefix: pear_shaped_
+    description: A body with more volume in hips compared to upper body.
+    is_positive: true
+
+  - name: apple_shaped
+    positive: ((apple-shaped body)), fuller midsection, slimmer legs
+    negative: flat stomach, evenly proportioned
+    file_prefix: apple_shaped_
+    description: A body type with a rounder torso and slimmer limbs.
+    is_positive: true
+
+  - name: rectangular
+    positive: ((rectangular body type)), straight silhouette, balanced proportions
+    negative: curvy, hourglass
+    file_prefix: rectangular_
+    description: A body with similar width at bust, waist, and hips.
+    is_positive: true
+
+  - name: hourglass
+    positive: ((hourglass body type)), narrow waist, balanced bust and hips
+    negative: straight, boxy
+    file_prefix: hourglass_
+    description: A classic silhouette with a defined waist and proportionate curves.
+    is_positive: true
+
+  - name: plus_size
+    positive: ((plus-size body)), fuller figure, soft curves
+    negative: slim, underweight
+    file_prefix: plus_size_
+    description: A larger and fuller body type with soft curves.
+    is_positive: true
+
+  - name: petite
+    positive: ((petite body)), small frame, short stature
+    negative: tall, bulky
+    file_prefix: petite_
+    description: A small and compact body frame.
+    is_positive: true
+
+  - name: stocky
+    positive: ((stocky body)), short and solid build, broad shoulders
+    negative: slim, lanky
+    file_prefix: stocky_
+    description: A compact and powerful body type with broad features.
+    is_positive: true
+
+  - name: lean_muscular
+    positive: ((lean muscular body)), toned and defined with low fat
+    negative: soft, bulky
+    file_prefix: lean_muscular_
+    description: A body with defined muscles but slender build.
+    is_positive: true
+
+  - name: broad_shoulders
+    positive: ((broad shoulders)), strong upper body
+    negative: narrow shoulders, slouching
+    file_prefix: broad_shoulders_
+    description: Wide shoulders indicating strength or athleticism.
+    is_positive: true
+
+  - name: narrow_waist
+    positive: ((narrow waist)), defined midsection
+    negative: wide waist, undefined
+    file_prefix: narrow_waist_
+    description: A slim and well-defined waistline.
+    is_positive: true
+
+  - name: long_legs
+    positive: ((long legs)), elongated lower body
+    negative: short legs, stubby
+    file_prefix: long_legs_
+    description: Legs that are proportionally longer than average.
+    is_positive: true
+
+  - name: short_legs
+    positive: ((short legs)), compact lower body
+    negative: long legs, lanky
+    file_prefix: short_legs_
+    description: Legs that appear shorter relative to the torso.
+    is_positive: true
+
+  - name: broad_hips
+    positive: ((broad hips)), wide lower body
+    negative: narrow hips, slim
+    file_prefix: broad_hips_
+    description: Wide hips giving a pronounced lower body shape.
+    is_positive: true
+
+  - name: narrow_hips
+    positive: ((narrow hips)), slim lower body
+    negative: wide hips, curvy
+    file_prefix: narrow_hips_
+    description: Slim hips providing a straighter silhouette.
+    is_positive: true
+
+  - name: defined_abs
+    positive: ((defined abs)), visible abdominal muscles
+    negative: soft midsection, no definition
+    file_prefix: defined_abs_
+    description: A toned midsection with clearly visible muscles.
+    is_positive: true
+
+  - name: soft_midsection
+    positive: ((soft midsection)), gentle curves, less defined muscles
+    negative: defined abs, flat stomach
+    file_prefix: soft_midsection_
+    description: A body with soft curves and less muscle definition.
+    is_positive: true
+
+  - name: broad_chest
+    positive: ((broad chest)), muscular upper body
+    negative: narrow chest, slouched
+    file_prefix: broad_chest_
+    description: A wide and powerful chest region.
+    is_positive: true
+
+  - name: narrow_chest
+    positive: ((narrow chest)), slim upper body
+    negative: broad chest, bulky
+    file_prefix: narrow_chest_
+    description: A slender chest with less width.
+    is_positive: true
+
+  - name: broad_back
+    positive: ((broad back)), muscular and strong
+    negative: narrow back, hunched
+    file_prefix: broad_back_
+    description: A strong, wide back indicating strength.
+    is_positive: true
+
+  - name: narrow_back
+    positive: ((narrow back)), slim and lean
+    negative: broad back, bulky
+    file_prefix: narrow_back_
+    description: A lean back with narrow width.
+    is_positive: true
+
+  - name: rounded_shoulders
+    positive: ((rounded shoulders)), relaxed posture
+    negative: broad shoulders, squared posture
+    file_prefix: rounded_shoulders_
+    description: Shoulders with a gentle roundness.
+    is_positive: true
+
+  - name: square_shoulders
+    positive: ((square shoulders)), strong and angular
+    negative: rounded shoulders, slouching
+    file_prefix: square_shoulders_
+    description: Angular shoulders with a square appearance.
+    is_positive: true
+
+  - name: toned_arms
+    positive: ((toned arms)), muscular definition in arms
+    negative: soft arms, flabby
+    file_prefix: toned_arms_
+    description: Arms showing muscle tone and definition.
+    is_positive: true
+
+  - name: soft_arms
+    positive: ((soft arms)), gentle curves, less muscle tone
+    negative: toned arms, muscular
+    file_prefix: soft_arms_
+    description: Arms with a smooth, less muscular appearance.
+    is_positive: true

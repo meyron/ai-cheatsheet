@@ -1,0 +1,137 @@
+name: posture
+label: Posture
+description: "Prompt Cheatsheet: Postures Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: '764700957899419'
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, full body, 8k resolution, 25yo woman, attractive, gray eyes, long curly red hair, 
+    natural face, neutral expression, balanced proportions, clean background,
+    <<positive>>
+  negative: <<negative>>
+variations:
+- name: standing_upright
+  positive: ((standing upright)), good posture, confident stance
+  negative: slouched, hunched, leaning
+  file_prefix: standing_upright_
+  description: A confident, straight-backed upright standing posture.
+  is_positive: true
+- name: crossed_arms
+  positive: ((arms crossed)), defensive stance, self-assured
+  negative: arms hanging, open gestures
+  file_prefix: crossed_arms_
+  description: Arms crossed across the chest, often implying confidence or defensiveness.
+  is_positive: true
+- name: hands_on_hips
+  positive: ((hands on hips)), assertive posture, confident
+  negative: hands behind back, hands in pockets
+  file_prefix: hands_on_hips_
+  description: Hands placed firmly on hips, conveying power or assertiveness.
+  is_positive: true
+- name: leaning_forward
+  positive: ((leaning forward)), interested, engaged posture
+  negative: leaning back, distracted
+  file_prefix: leaning_forward_
+  description: A forward-leaning posture indicating attentiveness or engagement.
+  is_positive: true
+- name: leaning_back
+  positive: ((leaning back)), relaxed, casual
+  negative: tense, upright, rigid
+  file_prefix: leaning_back_
+  description: A laid-back posture with the body leaning backward.
+  is_positive: true
+- name: hands_in_pockets
+  positive: ((hands in pockets)), relaxed posture, casual
+  negative: hands raised, arms crossed
+  file_prefix: hands_in_pockets_
+  description: A casual and relaxed stance with hands placed in pockets.
+  is_positive: true
+- name: arms_spread
+  positive: ((arms spread)), welcoming gesture, open posture
+  negative: arms crossed, closed body language
+  file_prefix: arms_spread_
+  description: An open and expansive arm gesture implying welcome or confidence.
+  is_positive: true
+- name: arms_down
+  positive: ((arms relaxed at sides)), neutral, calm posture
+  negative: arms raised, tense stance
+  file_prefix: arms_down_
+  description: Arms relaxed and down by the sides, indicating calmness.
+  is_positive: true
+- name: sitting_straight
+  positive: ((sitting upright)), good posture, alert
+  negative: slouching, leaning forward
+  file_prefix: sitting_straight_
+  description: A proper sitting posture with a straight back.
+  is_positive: true
+- name: sitting_crosslegged
+  positive: ((sitting cross-legged)), relaxed, informal pose
+  negative: legs apart, stiff posture
+  file_prefix: sitting_crosslegged_
+  description: A relaxed sitting posture with legs crossed at the ankles or knees.
+  is_positive: true
+- name: hands_clasped
+  positive: ((hands clasped together)), polite, respectful
+  negative: hands apart, aggressive stance
+  file_prefix: hands_clasped_
+  description: Hands joined in front or behind, often showing formality or humility.
+  is_positive: true
+- name: kneeling
+  positive: ((kneeling)), humble posture, prayer, submission
+  negative: standing, lounging
+  file_prefix: kneeling_
+  description: Kneeling on one or both knees, implying reverence or vulnerability.
+  is_positive: true
+- name: lying_on_back
+  positive: ((lying on back)), relaxed, at rest
+  negative: sitting, upright
+  file_prefix: lying_on_back_
+  description: A prone posture, lying back with relaxed limbs.
+  is_positive: true
+- name: lying_on_side
+  positive: ((lying on side)), casual, intimate pose
+  negative: sitting, standing
+  file_prefix: lying_on_side_
+  description: A relaxed sideways lying position.
+  is_positive: true
+- name: arched_back
+  positive: ((arched back)), dynamic posture, tension
+  negative: flat back, slouched
+  file_prefix: arched_back_
+  description: A curving of the back often used in expressive or dramatic poses.
+  is_positive: true
+- name: back_turned
+  positive: ((back turned)), facing away, mysterious posture
+  negative: facing front, looking at viewer
+  file_prefix: back_turned_
+  description: A figure shown from behind, creating a sense of mystery.
+  is_positive: true
+- name: walking_forward
+  positive: ((walking forward)), movement, progression
+  negative: standing still, frozen
+  file_prefix: walking_forward_
+  description: Dynamic posture showing forward walking motion.
+  is_positive: true
+- name: reaching_out
+  positive: ((reaching out)), stretching arm, inviting
+  negative: arms down, arms crossed
+  file_prefix: reaching_out_
+  description: Arm extended as if to touch or grab something.
+  is_positive: true
+- name: crouching
+  positive: ((crouching)), low posture, tense
+  negative: standing, upright
+  file_prefix: crouching_
+  description: A compact and low-to-ground posture.
+  is_positive: true
+- name: dancing_pose
+  positive: ((dancing posture)), joyful, expressive
+  negative: stiff, idle
+  file_prefix: dancing_pose_
+  description: An energetic and expressive dance pose.
+  is_positive: true

@@ -1,0 +1,100 @@
+name: nose_shapes
+label: Nose shapes
+description: "Prompt Cheatsheet: Nose shapes Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, shallow depth of field, high quality, 8k resolution, close-up, portrait, 25yo, woman,
+    attractive, beautiful, long curly red hair, round face shape, head facing forward, looking at the viewer,
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: straight
+    positive: ((straight nose)), balanced bridge, proportional
+    negative: hooked, wide
+    file_prefix: straight_
+    description: A straight and symmetrical nose profile.
+    is_positive: true
+
+  - name: aquiline
+    positive: ((aquiline nose)), slight curve or hook
+    negative: straight, flat
+    file_prefix: aquiline_
+    description: A distinguished nose with a gentle curve.
+    is_positive: true
+
+  - name: upturned
+    positive: ((upturned nose)), slight tilt upward
+    negative: drooping, flat
+    file_prefix: upturned_
+    description: A nose where the tip tilts slightly upward.
+    is_positive: true
+
+  - name: downturned
+    positive: ((downturned nose)), slight tilt downward
+    negative: upturned, flat
+    file_prefix: downturned_
+    description: A nose with a gently descending tip.
+    is_positive: true
+
+  - name: button
+    positive: ((button nose)), small, rounded tip
+    negative: large, hooked
+    file_prefix: button_
+    description: A cute and compact nose with a rounded tip.
+    is_positive: true
+
+  - name: broad
+    positive: ((broad nose)), wide bridge and nostrils
+    negative: thin, narrow
+    file_prefix: broad_
+    description: A strong nasal structure with width and character.
+    is_positive: true
+
+  - name: narrow
+    positive: ((narrow nose)), thin bridge, refined
+    negative: broad, flat
+    file_prefix: narrow_
+    description: An elegant and slim nasal structure.
+    is_positive: true
+
+  - name: flat
+    positive: ((flat nose)), low bridge
+    negative: high bridge, aquiline
+    file_prefix: flat_
+    description: A nose with minimal bridge projection.
+    is_positive: true
+
+  - name: hooked
+    positive: ((hooked nose)), pronounced curved bridge
+    negative: straight, button
+    file_prefix: hooked_
+    description: A prominent curved profile giving character.
+    is_positive: true
+
+  - name: bulbous
+    positive: ((bulbous nose)), rounded, full tip
+    negative: sharp, thin
+    file_prefix: bulbous_
+    description: A nose with a pronounced rounded tip.
+    is_positive: true
+
+  - name: high_bridge
+    positive: ((high nasal bridge)), elevated bridge
+    negative: flat, low
+    file_prefix: high_bridge_
+    description: A nose with elevated central ridge.
+    is_positive: true
+
+  - name: low_bridge
+    positive: ((low nasal bridge)), shallow profile
+    negative: high, sharp
+    file_prefix: low_bridge_
+    description: A softer, flatter nose bridge.
+    is_positive: true

@@ -1,0 +1,86 @@
+name: eyebrows
+label: Eyebrows
+description: "Prompt Cheatsheet: Eyebrows Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, shallow depth of field, high quality, 8k resolution, close-up, portrait, 25yo, woman,
+    attractive, beautiful, long curly red hair, round face shape, head facing forward, looking at the viewer,
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: arched
+    positive: ((arched eyebrows)), high arch, well-defined
+    negative: flat, straggly
+    file_prefix: arched_
+    description: A distinct eyebrow arch that lifts expressive framing.
+    is_positive: true
+
+  - name: straight
+    positive: ((straight eyebrows)), low arch, natural
+    negative: arched, highly defined
+    file_prefix: straight_
+    description: Eyebrows with a straight, soft shape and minimal curve.
+    is_positive: true
+
+  - name: thick
+    positive: ((thick eyebrows)), full, dense
+    negative: thin, sparse
+    file_prefix: thick_
+    description: Brows with strong volume and fullness.
+    is_positive: true
+
+  - name: thin
+    positive: ((thin eyebrows)), fine, delicate line
+    negative: thick, bushy
+    file_prefix: thin_
+    description: Fine and narrow eyebrows, elegant framing.
+    is_positive: true
+
+  - name: bushy
+    positive: ((bushy eyebrows)), natural, untamed
+    negative: groomed, sparse
+    file_prefix: bushy_
+    description: Full and natural brows with visible texture.
+    is_positive: true
+
+  - name: groomed
+    positive: ((well-groomed eyebrows)), clean lines
+    negative: bushy, straggly
+    file_prefix: groomed_
+    description: Carefully shaped and maintained brows.
+    is_positive: true
+
+  - name: feathered
+    positive: ((feathered eyebrows)), soft strokes, textured
+    negative: blocky, harsh
+    file_prefix: feathered_
+    description: Fine hair-like strokes for a natural look.
+    is_positive: true
+
+  - name: round
+    positive: ((rounded eyebrows)), curved shape
+    negative: straight, angular
+    file_prefix: round_
+    description: Smooth curved brows following natural brow bone.
+    is_positive: true
+
+  - name: angular
+    positive: ((angular eyebrows)), sharp angles
+    negative: rounded, soft
+    file_prefix: angular_
+    description: Defined edges and clear angles for structure.
+    is_positive: true
+
+  - name: soft
+    positive: ((soft eyebrows)), lightly defined
+    negative: harsh, dark
+    file_prefix: soft_
+    description: Gently shaped brows with diffused edges.
+    is_positive: true

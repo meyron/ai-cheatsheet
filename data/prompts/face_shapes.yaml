@@ -1,0 +1,109 @@
+name: face_shapes
+label: Face shape
+description: "Prompt Cheatsheet: Face shapes Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: '764700957899419'
+width: 512
+height: 512
+template:
+  positive: > 
+    photorealistic, ultra-detailed close-up portrait of a beautiful 25-year-old woman, soft lighting, shallow 
+    depth of field, 8k resolution, gray eyes, very short red hair tucked behind ears, (no bangs:1.2), soft jawline, 
+    round cheeks, balanced facial proportions, natural skin texture, head facing forward, 
+    looking directly at the viewer, centered composition, clean background, cinematic lighting, 
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: round
+    positive: ((round face shape)), full cheeks, soft jawline
+    negative: angular, long, sharp jaw
+    file_prefix: round_
+    description: A soft, circular face with a short chin and rounded cheeks.
+    is_positive: true
+  - name: oval
+    positive: ((oval face shape)), balanced proportions, slightly narrow chin
+    negative: square, very wide, flat
+    file_prefix: oval_
+    description: A classic oval-shaped face with balanced length and width.
+    is_positive: true
+  - name: square
+    positive: ((square face shape)), strong jawline, broad forehead
+    negative: narrow chin, soft shape
+    file_prefix: square_
+    description: A bold shape with strong angular jaw and forehead.
+    is_positive: true
+  - name: heart
+    positive: ((heart-shaped face)), wide forehead, narrow chin
+    negative: square, rounded jaw
+    file_prefix: heart_
+    description: A wide upper face tapering to a narrow chin.
+    is_positive: true
+  - name: diamond
+    positive: ((diamond-shaped face)), wide cheekbones, pointed chin
+    negative: round, flat sides
+    file_prefix: diamond_
+    description: Narrow forehead and jaw with prominent cheekbones.
+    is_positive: true
+  - name: triangle
+    positive: ((triangular face shape)), narrow forehead, wider jaw
+    negative: broad forehead, rounded cheeks
+    file_prefix: triangle_
+    description: A face that broadens toward the jaw.
+    is_positive: true
+  - name: inverted_triangle
+    positive: ((inverted triangle face)), broad forehead, narrow jawline
+    negative: square jaw, narrow forehead
+    file_prefix: inverted_triangle_
+    description: A V-shaped face with broad upper features tapering down.
+    is_positive: true
+  - name: long
+    positive: ((long face shape)), elongated proportions, high cheekbones
+    negative: round, squat
+    file_prefix: long_
+    description: A vertically stretched face with subtle width.
+    is_positive: true
+  - name: rectangular
+    positive: ((rectangular face shape)), elongated and angular jawline
+    negative: soft, circular
+    file_prefix: rectangular_
+    description: A longer version of the square face with height.
+    is_positive: true
+  - name: pear
+    positive: ((pear-shaped face)), narrow forehead, fuller cheeks and jaw
+    negative: oval, balanced
+    file_prefix: pear_
+    description: A unique face shape with volume concentrated at the jawline.
+    is_positive: true
+  - name: petite
+    positive: ((petite face)), small proportions, delicate features
+    negative: broad, prominent
+    file_prefix: petite_
+    description: A small, subtle, and soft-featured face.
+    is_positive: true
+  - name: prominent_cheekbones
+    positive: ((prominent cheekbones)), sculpted mid-face, shadowed cheeks
+    negative: flat cheeks, undefined shape
+    file_prefix: cheekbones_
+    description: High cheekbones giving definition and contour.
+    is_positive: true
+  - name: flat_face
+    positive: ((flat facial features)), subtle bone structure, minimal angles
+    negative: defined, strong features
+    file_prefix: flat_face_
+    description: A soft face with reduced depth and flatter angles.
+    is_positive: true
+  - name: wide_face
+    positive: ((wide face shape)), broad cheek span, full sides
+    negative: narrow, long
+    file_prefix: wide_
+    description: A horizontally wide face with more facial real estate.
+    is_positive: true
+  - name: angular
+    positive: ((angular face shape)), sharp contours, defined lines
+    negative: rounded, soft
+    file_prefix: angular_
+    description: Strong geometric features with a sharp aesthetic.
+    is_positive: true

@@ -1,0 +1,690 @@
+name: emotions
+label: Emotions
+description: "Prompt Cheatsheet: Emotions expression Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, shallow depth of field, high quality, 8k resolution, close-up, portrait, 25yo, woman,
+    attractive, beautiful, gray eyes, long curly red hair, round face shape, head facing forward, looking at the viewer,
+    <<positive>>
+  negative: <<negative>>
+variations:
+- name: laughing
+  positive: ((laughing joyfully)), (open mouth), (expressive eyes), (wide smile)
+  negative: frown, blank stare, neutral expression, closed mouth, sad face
+  file_prefix: laughing_
+  description: A joyful and lively expression with a wide open-mouthed smile.
+  is_positive: true
+- name: smiling
+  positive: ((smiling softly)), (gentle smile), (kind eyes)
+  negative: frown, angry face, expressionless, forced grin
+  file_prefix: smiling_
+  description: A soft and pleasant smile, suggesting friendliness and calm.
+  is_positive: true
+- name: shy
+  positive: ((shy expression)), (lowered gaze), (slight smile), (timid posture)
+  negative: overconfident expression, smirk, aggressive posture, strong eye contact
+  file_prefix: shy_
+  description: A modest and bashful look, often with lowered eyes or a slight turn
+    of the head.
+  is_positive: true
+- name: seductive
+  positive: ((seductive gaze)), (half-lidded eyes), (smirking), (tempting posture)
+  negative: childish face, innocent expression, goofy smile, cross-eyed
+  file_prefix: seductive_
+  description: A flirtatious and alluring expression with confident, teasing eye contact.
+  is_positive: true
+- name: angry
+  positive: ((angry expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: angry_
+  description: A portrait showing the angry emotion clearly with facial cues and posture.
+  is_positive: true
+- name: sad
+  positive: ((sad expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: sad_
+  description: A portrait showing the sad emotion clearly with facial cues and posture.
+  is_positive: true
+- name: surprised
+  positive: ((surprised expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: surprised_
+  description: A portrait showing the surprised emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: confused
+  positive: ((confused expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: confused_
+  description: A portrait showing the confused emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: bored
+  positive: ((bored expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: bored_
+  description: A portrait showing the bored emotion clearly with facial cues and posture.
+  is_positive: true
+- name: excited
+  positive: ((excited expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: excited_
+  description: A portrait showing the excited emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: worried
+  positive: ((worried expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: worried_
+  description: A portrait showing the worried emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: determined
+  positive: ((determined expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: determined_
+  description: A portrait showing the determined emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: disgusted
+  positive: ((disgusted expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: disgusted_
+  description: A portrait showing the disgusted emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: relaxed
+  positive: ((relaxed expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: relaxed_
+  description: A portrait showing the relaxed emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: tired
+  positive: ((tired expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: tired_
+  description: A portrait showing the tired emotion clearly with facial cues and posture.
+  is_positive: true
+- name: sleepy
+  positive: ((sleepy expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: sleepy_
+  description: A portrait showing the sleepy emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: peaceful
+  positive: ((peaceful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: peaceful_
+  description: A portrait showing the peaceful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: hopeful
+  positive: ((hopeful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: hopeful_
+  description: A portrait showing the hopeful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: lonely
+  positive: ((lonely expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: lonely_
+  description: A portrait showing the lonely emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: embarrassed
+  positive: ((embarrassed expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: embarrassed_
+  description: A portrait showing the embarrassed emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: ashamed
+  positive: ((ashamed expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: ashamed_
+  description: A portrait showing the ashamed emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: guilty
+  positive: ((guilty expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: guilty_
+  description: A portrait showing the guilty emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: proud
+  positive: ((proud expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: proud_
+  description: A portrait showing the proud emotion clearly with facial cues and posture.
+  is_positive: true
+- name: grateful
+  positive: ((grateful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: grateful_
+  description: A portrait showing the grateful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: nostalgic
+  positive: ((nostalgic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: nostalgic_
+  description: A portrait showing the nostalgic emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: melancholy
+  positive: ((melancholy expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: melancholy_
+  description: A portrait showing the melancholy emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: playful
+  positive: ((playful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: playful_
+  description: A portrait showing the playful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: sarcastic
+  positive: ((sarcastic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: sarcastic_
+  description: A portrait showing the sarcastic emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: serious
+  positive: ((serious expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: serious_
+  description: A portrait showing the serious emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: sassy
+  positive: ((sassy expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: sassy_
+  description: A portrait showing the sassy emotion clearly with facial cues and posture.
+  is_positive: true
+- name: flirty
+  positive: ((flirty expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: flirty_
+  description: A portrait showing the flirty emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: stern
+  positive: ((stern expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: stern_
+  description: A portrait showing the stern emotion clearly with facial cues and posture.
+  is_positive: true
+- name: innocent
+  positive: ((innocent expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: innocent_
+  description: A portrait showing the innocent emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: curious
+  positive: ((curious expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: curious_
+  description: A portrait showing the curious emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: thoughtful
+  positive: ((thoughtful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: thoughtful_
+  description: A portrait showing the thoughtful emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: focused
+  positive: ((focused expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: focused_
+  description: A portrait showing the focused emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: panicked
+  positive: ((panicked expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: panicked_
+  description: A portrait showing the panicked emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: terrified
+  positive: ((terrified expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: terrified_
+  description: A portrait showing the terrified emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: disoriented
+  positive: ((disoriented expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: disoriented_
+  description: A portrait showing the disoriented emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: skeptical
+  positive: ((skeptical expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: skeptical_
+  description: A portrait showing the skeptical emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: bashful
+  positive: ((bashful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: bashful_
+  description: A portrait showing the bashful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: cheerful
+  positive: ((cheerful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: cheerful_
+  description: A portrait showing the cheerful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: dreamy
+  positive: ((dreamy expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: dreamy_
+  description: A portrait showing the dreamy emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: friendly
+  positive: ((friendly expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: friendly_
+  description: A portrait showing the friendly emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: jealous
+  positive: ((jealous expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: jealous_
+  description: A portrait showing the jealous emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: mischievous
+  positive: ((mischievous expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: mischievous_
+  description: A portrait showing the mischievous emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: nervous
+  positive: ((nervous expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: nervous_
+  description: A portrait showing the nervous emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: puzzled
+  positive: ((puzzled expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: puzzled_
+  description: A portrait showing the puzzled emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: raging
+  positive: ((raging expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: raging_
+  description: A portrait showing the raging emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: ecstatic
+  positive: ((ecstatic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: ecstatic_
+  description: A portrait showing the ecstatic emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: content
+  positive: ((content expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: content_
+  description: A portrait showing the content emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: grinning
+  positive: ((grinning expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: grinning_
+  description: A portrait showing the grinning emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: amused
+  positive: ((amused expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: amused_
+  description: A portrait showing the amused emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: affectionate
+  positive: ((affectionate expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: affectionate_
+  description: A portrait showing the affectionate emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: joyful
+  positive: ((joyful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: joyful_
+  description: A portrait showing the joyful emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: eager
+  positive: ((eager expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: eager_
+  description: A portrait showing the eager emotion clearly with facial cues and posture.
+  is_positive: true
+- name: inspired
+  positive: ((inspired expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: inspired_
+  description: A portrait showing the inspired emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: radiant
+  positive: ((radiant expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: radiant_
+  description: A portrait showing the radiant emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: relieved
+  positive: ((relieved expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: relieved_
+  description: A portrait showing the relieved emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: calm
+  positive: ((calm expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: calm_
+  description: A portrait showing the calm emotion clearly with facial cues and posture.
+  is_positive: true
+- name: serene
+  positive: ((serene expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: serene_
+  description: A portrait showing the serene emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: inviting
+  positive: ((inviting expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: inviting_
+  description: A portrait showing the inviting emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: compassionate
+  positive: ((compassionate expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: compassionate_
+  description: A portrait showing the compassionate emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: warm
+  positive: ((warm expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: warm_
+  description: A portrait showing the warm emotion clearly with facial cues and posture.
+  is_positive: true
+- name: optimistic
+  positive: ((optimistic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: optimistic_
+  description: A portrait showing the optimistic emotion clearly with facial cues
+    and posture.
+  is_positive: true
+- name: pragmatic
+  positive: ((pragmatic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: pragmatic_
+  description: A portrait showing the pragmatic emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: balanced
+  positive: ((balanced expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: balanced_
+  description: A portrait showing the balanced emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: motivated
+  positive: ((motivated expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: motivated_
+  description: A portrait showing the motivated emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: confident
+  positive: ((confident expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: confident_
+  description: A portrait showing the confident emotion clearly with facial cues and
+    posture.
+  is_positive: true
+- name: smug
+  positive: ((smug expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: smug_
+  description: A portrait showing the smug emotion clearly with facial cues and posture.
+  is_positive: false
+- name: cold
+  positive: ((cold expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: cold_
+  description: A portrait showing the cold emotion clearly with facial cues and posture.
+  is_positive: false
+- name: resentful
+  positive: ((resentful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: resentful_
+  description: A portrait showing the resentful emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: judgmental
+  positive: ((judgmental expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: judgmental_
+  description: A portrait showing the judgmental emotion clearly with facial cues
+    and posture.
+  is_positive: false
+- name: apathetic
+  positive: ((apathetic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: apathetic_
+  description: A portrait showing the apathetic emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: aloof
+  positive: ((aloof expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: aloof_
+  description: A portrait showing the aloof emotion clearly with facial cues and posture.
+  is_positive: false
+- name: hostile
+  positive: ((hostile expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: hostile_
+  description: A portrait showing the hostile emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: irritated
+  positive: ((irritated expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: irritated_
+  description: A portrait showing the irritated emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: impatient
+  positive: ((impatient expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: impatient_
+  description: A portrait showing the impatient emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: manic
+  positive: ((manic expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: manic_
+  description: A portrait showing the manic emotion clearly with facial cues and posture.
+  is_positive: false
+- name: manipulative
+  positive: ((manipulative expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: manipulative_
+  description: A portrait showing the manipulative emotion clearly with facial cues
+    and posture.
+  is_positive: false
+- name: paranoid
+  positive: ((paranoid expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: paranoid_
+  description: A portrait showing the paranoid emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: intimidating
+  positive: ((intimidating expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: intimidating_
+  description: A portrait showing the intimidating emotion clearly with facial cues
+    and posture.
+  is_positive: false
+- name: mocking
+  positive: ((mocking expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: mocking_
+  description: A portrait showing the mocking emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: sorrowful
+  positive: ((sorrowful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: sorrowful_
+  description: A portrait showing the sorrowful emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: devastated
+  positive: ((devastated expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: devastated_
+  description: A portrait showing the devastated emotion clearly with facial cues
+    and posture.
+  is_positive: false
+- name: vengeful
+  positive: ((vengeful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: vengeful_
+  description: A portrait showing the vengeful emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: furious
+  positive: ((furious expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: furious_
+  description: A portrait showing the furious emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: hateful
+  positive: ((hateful expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: hateful_
+  description: A portrait showing the hateful emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: arrogant
+  positive: ((arrogant expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: arrogant_
+  description: A portrait showing the arrogant emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: snide
+  positive: ((snide expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: snide_
+  description: A portrait showing the snide emotion clearly with facial cues and posture.
+  is_positive: false
+- name: petulant
+  positive: ((petulant expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: petulant_
+  description: A portrait showing the petulant emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: weary
+  positive: ((weary expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: weary_
+  description: A portrait showing the weary emotion clearly with facial cues and posture.
+  is_positive: false
+- name: withdrawn
+  positive: ((withdrawn expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: withdrawn_
+  description: A portrait showing the withdrawn emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: tense
+  positive: ((tense expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: tense_
+  description: A portrait showing the tense emotion clearly with facial cues and posture.
+  is_positive: false
+- name: disturbed
+  positive: ((disturbed expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: disturbed_
+  description: A portrait showing the disturbed emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: detached
+  positive: ((detached expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: detached_
+  description: A portrait showing the detached emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: rejected
+  positive: ((rejected expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: rejected_
+  description: A portrait showing the rejected emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: horrified
+  positive: ((horrified expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: horrified_
+  description: A portrait showing the horrified emotion clearly with facial cues and
+    posture.
+  is_positive: false
+- name: defeated
+  positive: ((defeated expression))
+  negative: neutral face, flat look, unrelated emotion, emotionless
+  file_prefix: defeated_
+  description: A portrait showing the defeated emotion clearly with facial cues and
+    posture.
+  is_positive: false

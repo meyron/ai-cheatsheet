@@ -1,0 +1,20 @@
+realism:
+  model: photonXEpicrealism_v10
+  model_name: Photon X EpicRealism
+  model_url: https://civitai.com/models/652785/photon-x-epicrealism
+  file_prefix: batch/<<prompt_name>>/photonXEpicrealism_v10/
+anime:
+  model: animeanything_v10
+  model_name: Anime Anything
+  model_url: https://civitai.com/models/113841/animeanything-or
+  file_prefix: batch/<<prompt_name>>/animeanything_v10/
+cartoon:
+  model: cuteCartoon_v10
+  model_name: Cute Cartoon Illustration
+  model_url: https://civitai.com/models/85547/cute-cartoon-illustration
+  file_prefix: batch/<<prompt_name>>/cuteCartoon_v10/
+cartoonWestern:
+  model: westernCartoonTypeA_v10
+  model_name: Western Cartoon Type A
+  model_url: https://civitai.com/models/62060/western-cartoon-type-a
+  file_prefix: batch/<<prompt_name>>/westernCartoonTypeA_v10/

@@ -1,0 +1,93 @@
+name: hairstyle
+label: Hairstyle
+description: "Prompt Cheatsheet: Hairstyle Across AI Models"
+sampler: dpmpp_2m_sde_gpu
+scheduler: karras
+cfg: 5
+steps: 30
+seed: "764700957899419"
+width: 512
+height: 512
+template:
+  positive: >
+    photorealistic, soft lighting, shallow depth of field, high quality, 8k resolution, close-up, portrait, 25yo, woman,
+    attractive, beautiful, gray eyes, looking at the viewer,
+    <<positive>>
+  negative: <<negative>>
+variations:
+  - name: long_straight
+    positive: ((long straight hair)), sleek, shiny
+    negative: curly, short, messy
+    file_prefix: long_straight_
+    description: Straight and flowing long hair.
+    is_positive: true
+
+  - name: long_wavy
+    positive: ((long wavy hair)), soft waves
+    negative: straight, short
+    file_prefix: long_wavy_
+    description: Long hair with natural soft waves.
+    is_positive: true
+
+  - name: long_curly
+    positive: ((long curly hair)), voluminous curls
+    negative: straight, frizzy
+    file_prefix: long_curly_
+    description: Bouncy, spiral curls with length.
+    is_positive: true
+
+  - name: shoulder_length
+    positive: ((shoulder-length hair)), neat, balanced
+    negative: too short, too long
+    file_prefix: shoulder_length_
+    description: Hair that reaches just to the shoulders.
+    is_positive: true
+
+  - name: short_bob
+    positive: ((short bob cut)), chin-length, clean lines
+    negative: long hair, messy
+    file_prefix: short_bob_
+    description: A fashionable bob cut ending at the chin.
+    is_positive: true
+
+  - name: pixie_cut
+    positive: ((pixie cut)), very short, modern
+    negative: long, classic
+    file_prefix: pixie_cut_
+    description: Very short, edgy and modern hairstyle.
+    is_positive: true
+
+  - name: braided
+    positive: ((braided hair)), single braid, neat style
+    negative: loose, messy
+    file_prefix: braided_
+    description: Hair styled in one or more braids.
+    is_positive: true
+
+  - name: ponytail
+    positive: ((high ponytail)), tied back, clean
+    negative: loose, unkempt
+    file_prefix: ponytail_
+    description: Hair pulled back and tied at the crown or nape.
+    is_positive: true
+
+  - name: bun
+    positive: ((hair in a bun)), neat updo
+    negative: loose, untied
+    file_prefix: bun_
+    description: Hair styled in a neat bun on top or back of head.
+    is_positive: true
+
+  - name: afro
+    positive: ((afro hairstyle)), dense curls, voluminous
+    negative: flat, straight
+    file_prefix: afro_
+    description: A naturally curly and voluminous afro.
+    is_positive: true
+
+  - name: mohawk
+    positive: ((mohawk hairstyle)), shaved sides, bold center strip
+    negative: classic, soft
+    file_prefix: mohawk_
+    description: A bold style with shaved sides and upright hair strip.
+    is_positive: true
